@@ -14,6 +14,8 @@ import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.elordenador.eggtherite.materials.EggtheriteMaterial;
+
 public class EggTheriteMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -21,6 +23,7 @@ public class EggTheriteMod implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("eggtheritemod");
 	public static final Item EGGTHERITE_SCRAP = new Item(new FabricItemSettings());
 	public static final Item EGGTHERITE_INGOT = new Item(new FabricItemSettings());
+	public static final EggtheriteMaterial  EGGMT = new EggtheriteMaterial(EGGTHERITE_INGOT);
 
 	private static final ItemGroup EGGTHERITE_GROUP = FabricItemGroup.builder().icon(() -> new ItemStack(EGGTHERITE_SCRAP)).displayName(Text.translatable("itemGroup.eggtheritemod.eggtheriteGroup")).entries((content, entries) -> {
 		entries.add(EGGTHERITE_SCRAP);
