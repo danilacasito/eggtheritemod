@@ -1,0 +1,12 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:dragon_egg"
+        }
+    ],
+    "result": {
+        "item": "eggtheritemod:eggtherite_scrap",
+        "count": 4
+    }
+}
