@@ -1,5 +1,6 @@
 {
     "item.eggtheritemod.eggtherite_scrap": "Eggtherite Scrap",
     "item.eggtheritemod.eggtherite_ingot": "Eggtherite Ingot",
-    "itemGroup.eggtheritemod.eggtheriteGroup": "Eggtherite Mod"
+    "itemGroup.eggtheritemod.eggtheriteGroup": "Eggtherite Mod",
+    "item.eggtheritemod.eggtherite_pickaxe": "Eggtherite Pickaxe"
 }

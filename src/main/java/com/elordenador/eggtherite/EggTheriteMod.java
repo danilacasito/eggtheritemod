@@ -6,6 +6,8 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.PickaxeItem;
+import net.minecraft.item.ToolItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -24,10 +26,12 @@ public class EggTheriteMod implements ModInitializer {
 	public static final Item EGGTHERITE_SCRAP = new Item(new FabricItemSettings());
 	public static final Item EGGTHERITE_INGOT = new Item(new FabricItemSettings());
 	public static final EggtheriteMaterial  EGGMT = new EggtheriteMaterial(EGGTHERITE_INGOT);
+	public static final ToolItem EGGTHERITE_PICKAXE = new PickaxeItem(EGGMT, 1, -2.8F, new FabricItemSettings());
 
 	private static final ItemGroup EGGTHERITE_GROUP = FabricItemGroup.builder().icon(() -> new ItemStack(EGGTHERITE_SCRAP)).displayName(Text.translatable("itemGroup.eggtheritemod.eggtheriteGroup")).entries((content, entries) -> {
 		entries.add(EGGTHERITE_SCRAP);
 		entries.add(EGGTHERITE_INGOT);
+		entries.add(EGGTHERITE_PICKAXE);
 	}).build();
 	@Override
 	public void onInitialize() {
@@ -37,6 +41,8 @@ public class EggTheriteMod implements ModInitializer {
 
 		Registry.register(Registries.ITEM, new Identifier("eggtheritemod", "eggtherite_scrap"), EGGTHERITE_SCRAP);
 		Registry.register(Registries.ITEM, new Identifier("eggtheritemod", "eggtherite_ingot"), EGGTHERITE_INGOT);
+		Registry.register(Registries.ITEM, new Identifier("eggtheritemod", "eggtherite_pickaxe"), EGGTHERITE_PICKAXE);
 		Registry.register(Registries.ITEM_GROUP, new Identifier("eggtheritemod", "eggtherite_group"), EGGTHERITE_GROUP);
+		
 	}
 }
