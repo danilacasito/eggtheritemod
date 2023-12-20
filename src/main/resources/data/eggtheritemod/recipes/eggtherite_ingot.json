@@ -8,22 +8,7 @@
             "item": "eggtheritemod:eggtherite_scrap"
         },
         {
-            "item": "eggtheritemod:eggtherite_scrap"
-        },
-        {
-            "item": "eggtheritemod:eggtherite_scrap"
-        },
-        {
-            "item": "minecraft:gold_ingot"
-        },
-        {
-            "item": "minecraft:gold_ingot"
-        },
-        {
-            "item": "minecraft:gold_ingot"
-        },
-        {
-            "item": "minecraft:gold_ingot"
+            "item": "minecraft:diamond"
         }
     ],
     "result": {
